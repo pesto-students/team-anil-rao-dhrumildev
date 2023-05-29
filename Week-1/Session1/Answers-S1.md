@@ -4,7 +4,7 @@
 
 - Protocol stack is basically an architecture related to web. It is a layered collection of some     protocols that combinely help in providing communication services. Each protocol has specific task and by grouping them into layers it creates a robust system.
 
-![alt text](Session-01/images/protocols_stack.png?raw=true "Title")
+![alt text](protocols_stack.png?raw=true "Title")
 
 - Here are types of transport layer and usage:
 <ins>Link Layer:</ins> This layer consists of ethernet cable. Any internet we use Ethernet cable is used at root level. Be it like WiFi or Mobile internet or simple broadband connection.
@@ -20,7 +20,7 @@
 
 - Below mentioned are different type of servers:
 
-![alt text](Session-01/images/servertypes.png?raw=true "Title")
+![alt text](servertypes.png?raw=true "Title")
 
 - We shall use server based on our requirement. For instance for website we shall use web servers. For database hosting we should use database servers. Similarly for other servers as well.
 
