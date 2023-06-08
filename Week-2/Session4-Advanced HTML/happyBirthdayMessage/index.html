@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        form {
+            display: table;
+        }
+        
+        label {
+            text-align: left;
+        }
+        
+        input {
+            display: flexbox;
+            position: relative;
+        }
+    </style>
+
+    <title>Message Creator</title>
+
+
+</head>
+
+
+<body style="margin: 20px;">
+    <header>
+        <h2 style="text-align: left;">Happy Birthday Message Creator</h2>
+    </header>
+
+    <section>
+        <main>
+            <div id="centeringDiv">
+                <form id="mainForm" action="index.html" method="post" enctype="multipart/form-data">
+                    <div>
+                        <label for="message">Message?</label>
+                        <input type="text" id="message" name="message">
+                    </div>
+                    <div>
+                        <label for="email">Email address:</label>
+                        <input type="email" id="email" name="email" pattern="[a-zA-Z0-9-_\.]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0- 9-]+)*">
+                    </div>
+                    <div>
+                        <label for="dateofvisit">Date Of Visit?</label>
+                        <input type="date" id="dateofvisit" name="dateofvisit"><br><br>
+                    </div>
+                    <div>
+                        <label for="favcolor">Message color?</label>
+                        <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br><br>
+                    </div>
+
+                    <div>
+                        <label for="noofblinks">Number of blinks?</label>
+                        <input type="number" id="noofblinks" name="noofblinks" min="0" max="10" value="0">
+                    </div>
+
+
+                    <div>
+                        <label for="volume">Music Volume?</label>
+
+                        <input type="range" id="volume" name="volume" min="0" max="50" value="20">
+                    </div>
+
+                    <div>
+                        <label for="submit"></label>
+                        <input type="submit" value="Send Birthday Message">
+
+                    </div>
+                </form>
+            </div>
+
+
+
+        </main>
+
+    </section>
+</body>
+
+<footer>
+    <section>
+        <p>&#169; 2023 Restaurant Reviews</p>
+    </section>
+</footer>
