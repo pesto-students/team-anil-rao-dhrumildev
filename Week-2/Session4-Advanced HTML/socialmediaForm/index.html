@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* html,
+        body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+        } */
+        /* #centeringDiv {
+            height: 100%;
+            width: 100%;
+            display: flex;
+        }
+        
+        #mainForm {
+            display: block;
+            position: relative;
+            text-align: left;
+        } */
+        
+        form {
+            display: table;
+        }
+        
+        label {
+            text-align: left;
+        }
+        
+        input {
+            display: flexbox;
+            position: relative;
+        }
+    </style>
+
+    <title>Social Network</title>
+
+
+</head>
+
+
+<body style="margin: 20px;">
+    <header>
+        <h1 style="text-align: left;">Join a social network</h1>
+    </header>
+
+    <section>
+        <main>
+            <h2>Add Review</h2>
+            <div id="centeringDiv">
+                <form id="mainForm" action="index.html" method="post" enctype="multipart/form-data">
+                    <div>
+                        <label for="fullName">Full name:</label>
+                        <input type="text" id="fullName" name="fullName" required>
+                    </div>
+                    <div>
+                        <label for="email">Email address:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="aboutyou">About you:</label>
+                        <textarea id="aboutyou" name="aboutyou" rows="3" columns="50"></textarea>
+                    </div>
+
+                    <div>
+                        <label for="file">Photo:</label>
+                        <input type="file" id="picture" name="picture">
+                    </div>
+
+                    <div>
+                        <label for="submit"></label>
+                        <input type="submit" value="Submit">
+
+                    </div>
+                </form>
+            </div>
+
+
+
+        </main>
+
+    </section>
+</body>
+
+<footer>
+    <section>
+        <p>&#169; 2023 Restaurant Reviews</p>
+    </section>
+</footer>
