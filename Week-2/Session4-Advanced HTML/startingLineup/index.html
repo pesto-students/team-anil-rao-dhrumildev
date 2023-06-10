@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .field {
+            width: 350px;
+            height: auto;
+        }
+    </style>
+
+    <title>Starting Lineup</title>
+
+
+</head>
+
+
+<body style="margin: 20px;">
+    <header>
+        <h2 style="text-align: left;">Starting Lineup</h2>
+    </header>
+
+    <section>
+        <main>
+            <div id="centeringDiv">
+                <form id="mainForm" action="index.html">
+                    <div>
+                        <fieldset class="field">
+                            <legend>Status:</legend>
+                            <div>
+                                <input type="radio" id="draft" name="status" value="Draft">
+                                <label for="draft">Draft</label>
+
+                                <input type="radio" id="final" name="status" value="Final" checked="checked">
+                                <label for="final">Final</label>
+
+                            </div>
+
+                        </fieldset>
+                    </div>
+                    <div>
+                        <label for="gameDate">Date:</label>
+                        <select name="gameDate" id="gameDate">
+                                        <option selected="selected" value="march20">March 20</option>
+                                        <option value="march24">March 24</option>
+                                        <option value="april2">April 2</option>
+                                        <option value="april6">April 6</option>
+                                        <option value="april3">April 13</option>
+                                      </select>
+                    </div>
+                    <div>
+                        <fieldset class="field">
+                            <legend>Players:</legend>
+                            <div>
+                                <div>
+                                    <input type="checkbox" id="aaravagarwal" name="player" value="Aarav
+                                        Agarwal">
+                                    <label for="player">Aarav
+                                                Agarwal</label>
+                                </div>
+
+                                <div>
+                                    <input type="checkbox" id="avajohnson" name="player" value="Ava Johnson">
+                                    <label for="player"> Ava Johnson</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="julioortiz" name="player" value="Julio Ortiz">
+                                    <label for="player">Julio Ortiz</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="liamrubio" name="player" value="Liam Rubio">
+                                    <label for="player"> Liam Rubio</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="emmawitherspoon" name="player" value="Emma Witherspoon">
+                                    <label for="player">Emma Witherspoon</label>
+                                </div>
+
+                            </div>
+
+                        </fieldset>
+                    </div>
+                    <div>
+                        <label for="submit"></label>
+                        <input type="submit" value="Submit">
+
+                    </div>
+                </form>
+            </div>
+
+
+
+        </main>
+
+    </section>
+</body>
