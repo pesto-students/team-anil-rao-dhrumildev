@@ -1,0 +1,12 @@
+form {
+    display: table;
+}
+
+label {
+    text-align: left;
+}
+
+input {
+    display: flexbox;
+    position: relative;
+}
