@@ -5,46 +5,50 @@ const divideArray = (nums) => {
         return { message: "Please provide a valid and non-empty array." }
     }
 
-    let consoleStmtPrinted = false
-    let counter = 0
+    let evenNums = []
+    let oddNums = []
 
     try {
-        //sorting the array first
-        nums.sort()
 
         //by doing below we check that number is divisible by 2 then say it even else odd
-
         for (let n in nums) {
-            if (!consoleStmtPrinted) {
-                console.log("Even numbers:")
-                consoleStmtPrinted = true
+
+            if (nums[n] != 0) {
+                if ((nums[n] % 2 == 0) && nums[n] != 0) {
+                    evenNums.push(nums[n])
+                } else {
+                    oddNums.push(nums[n])
+                }
             }
 
-            if ((nums[n] % 2 == 0) && nums[n] != 0) {
-                counter++
-                console.log(nums[n])
-            }
         }
-        if (counter == 0) console.log("None")
 
-        consoleStmtPrinted = false
-        counter = 0
+        evenNums.sort()
+        oddNums.sort()
 
-        for (let m in nums) {
-            if (!consoleStmtPrinted) {
-                console.log("Odd numbers:")
-                consoleStmtPrinted = true
-            }
+        console.log("Even numbers:")
+        if (!evenNums.length) {
+            console.log("None")
 
-            if ((nums[m] % 2 != 0) && nums[m] != 0) {
-                counter++
-
-                console.log(nums[m])
-            }
+        } else {
+            evenNums.forEach(e => {
+                console.log(e)
+            })
         }
-        if (counter == 0) console.log("None")
+
+        console.log("Odd numbers:")
+        if (!oddNums.length) {
+            console.log("None")
+
+        } else {
+            oddNums.forEach(e => {
+                console.log(e)
+            })
+        }
+
+
 
     } catch (error) {
-        return {"message": error }
+        return { "message": error }
     }
 }
