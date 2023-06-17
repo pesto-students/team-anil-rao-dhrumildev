@@ -88,3 +88,10 @@ footer {
 div div div {
     display: inline;
 }
+
+ul {
+    background-image: url("/Week-3/Responsive images for a vacation website/check.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60vw;
+}
