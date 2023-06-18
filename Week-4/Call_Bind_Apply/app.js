@@ -58,12 +58,37 @@ class ScientificCalculator extends Calculator {
 
         return (Math.pow(num, power))
     }
+
+    multiplyByTwo(num) {
+        return num * 2
+    }
+
+    powerOfThree(num) {
+
+        if (isNaN(num)) {
+            return { message: "Please enter valid number." }
+        }
+
+        return (Math.pow(num, 3))
+
+    }
 }
 
 const scInstance = new ScientificCalculator();
 
 //call method to invoke add
-scInstance.add(10, 5).call()
+console.log(scInstance.add.call(this, 10, 5))
 
+//apply method to invoke subtract
+console.log(scInstance.subtract.apply(this, [12, 1]))
+
+
+//bind method to invoke multiplyByTwo
+const multiplyByTwoFunc = scInstance.multiplyByTwo.bind()
+console.log(multiplyByTwoFunc(5))
+
+//bind method to invoke powerOfThree
+const powerOfThreeFunc = scInstance.powerOfThree.bind()
+console.log(powerOfThreeFunc(2))
 
 
