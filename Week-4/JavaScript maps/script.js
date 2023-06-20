@@ -1,10 +1,10 @@
 function calcWordFrequencies(inputText) {
 
-        var wordList = inputText.split(' ');
-        var wordFrequency = {};
+        let wordList = inputText.split(' ');
+        let wordFrequency = {};
       
-        for (var i = 0; i < wordList.length; i++) {
-          var word = wordList[i];
+        for (let i = 0; i < wordList.length; i++) {
+          let word = wordList[i];
       
           if (word in wordFrequency) {
             wordFrequency[word] += 1;
@@ -13,7 +13,7 @@ function calcWordFrequencies(inputText) {
           }
         }
       
-        for (var word in wordFrequency) {
+        for (let word in wordFrequency) {
           console.log(word + ' ' + wordFrequency[word]);
         }    
      

@@ -6,11 +6,7 @@ const isStrongPassword = (password) => {
             isPasswordWeak = true
         }
 
-        if (isPasswordWeak) {
-            return false
-        } else {
-            return true
-        }
+        return !isPasswordWeak
 
     } catch (error) {
         return { message: error }
