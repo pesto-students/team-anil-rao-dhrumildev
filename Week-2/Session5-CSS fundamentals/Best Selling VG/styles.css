@@ -1,0 +1,32 @@
+:root {
+    --table-color: forestgreen;
+    --row-bg-color: honeydew;
+    font-family: Calibri, Myriad;
+}
+
+
+/* Your solution goes here */
+
+.game-table {
+    text-align: center;
+    height: 200px;
+    width: 40px;
+    margin-left: 50px;
+    border: solid #000;
+    border-width: 0 2px;
+    border-color: var(--table-color);
+    margin-right: 1560px;
+}
+
+caption {
+    text-transform: uppercase;
+    background-color: var(--table-color);
+    color: white;
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: var(--row-bg-color);
+}
+
+body {}
